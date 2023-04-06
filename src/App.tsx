@@ -19,6 +19,12 @@ class App extends Component<any, state> {
 
   eventoFormulario = (evento: any) => {
     evento.preventDefault()
+    let dados = `
+    Nome: ${this.state.pnome}
+    último nome: ${this.state.unome}
+    password: ${this.state.password}
+    e-mail: ${this.state.email}`
+    alert(dados)
   }
 
   obterPnome = (evento: any) => {
